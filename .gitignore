@@ -1,32 +1,99 @@
+# =========================
 # Python
+# =========================
+
 __pycache__/
 *.py[cod]
+*$py.class
 
-# Virtual environment
-DSvenv/
+# Virtual environments
+.venv/
 venv/
 env/
+DSvenv/
 
-# Jupyter
+# =========================
+# Jupyter Notebook
+# =========================
+
 .ipynb_checkpoints/
 
-# VS Code
-.vscode/
+# =========================
+# Environment / Secrets
+# =========================
 
-# Environment variables
 .env
+.env.*
+!.env.example
 
-# OS
-.DS_Store
-Thumbs.db
+# =========================
+# Model Files
+# =========================
 
-# Model files
 *.pkl
 *.joblib
+*.pickle
 
-# Large datasets
-*.csv
-*.xlsx
+# =========================
+# Data
+# =========================
 
-# Python cache
+data/raw/*
+data/processed/*
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# OS
+# =========================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# =========================
+# Python build files
+# =========================
+
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Testing
+# =========================
+
 .pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.bak
