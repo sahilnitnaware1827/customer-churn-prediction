@@ -390,6 +390,22 @@ http://localhost:8000/docs
 
 ---
 
+# 🌐 Live Deployment
+
+The Customer Churn Prediction API is deployed on Render using Docker.
+
+### Live API
+
+https://customer-churn-prediction-zpj7.onrender.com
+
+### Swagger API Documentation
+
+https://customer-churn-prediction-zpj7.onrender.com/docs
+
+The live API allows users to submit customer information and receive a churn prediction and probability through the FastAPI REST API.
+
+---
+
 # 📁 Project Structure
 
 ```text
@@ -575,7 +591,6 @@ Potential improvements include:
 * Data drift detection
 * Experiment tracking
 * CI/CD pipeline
-* Cloud deployment
 * Authentication and authorization
 * Logging and monitoring
 * Automated model retraining
